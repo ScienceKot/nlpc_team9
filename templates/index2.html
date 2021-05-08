@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="{{ url_for('index') }}" method="post">
+        <input type="index" name="projectFilepath" value="{{search}}">
+        <input type="submit">
+    </form>
+    {% for name in names %}
+        <h1>{{name}}</h1>
+    {% endfor %}
+</body>
+</html>
